@@ -1,0 +1,92 @@
+.navigation-bar {
+  display: flex;
+  position: sticky;
+  margin-top: 4vh; /* constant top margin */
+  z-index: 1000;
+
+  .plotta {
+    display: flex;
+    align-self: center;
+    margin-left: 6%;
+    transition: .3s;
+    
+    h1 {
+      margin-left: 16px;
+    }
+
+    img {
+      border: solid #0a224f;
+      border-radius: 100%;
+      width: 50px;
+      height: 50px;
+      align-self: center;
+      margin-bottom: 8px;
+      margin-top: 8px;
+    }
+  }
+
+  .navigation-buttons {
+    display: inherit;
+    margin-left: auto;
+    margin-right: 6%;
+    list-style: none;
+    align-self: center;
+
+    li {
+      margin: 0 2rem 0 2rem; /* t r b l */
+    }
+
+    button {
+      font-size: 1rem;
+      background-color: transparent;
+      border: transparent;
+      border-radius: 24px;
+      padding: 12px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: .3s;
+      
+      a {
+        color: var(--text-color);
+        text-decoration: none;
+      }
+    }
+
+    button:hover {
+      background-color: #0a224f;
+      color: white;
+      transform: scale(1.1);
+      transition: .3s;
+      font-weight: 600;
+    }
+  }
+}
+
+.menu { /* this is the menu hamburger button */
+  width: 30px;
+  height: 30px;
+  transition: 0.2s;
+  align-self: center;
+  cursor: pointer;
+}
+
+.mobile-menu {
+  background: #0a224f;
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255,255,255,0.15);
+  position: absolute;
+  top: 100%;
+  right: 6%;
+  display: flex;
+  flex-direction: column;
+  padding: .8rem 0 .8rem 0;
+  border-radius: 1rem;
+  z-index: 1000;
+
+  li {
+    padding: .5rem 0 .5rem 0;
+  }
+  a {
+    color: white !important;
+  }
+}

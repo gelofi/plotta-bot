@@ -1,0 +1,18 @@
+:root {
+  --background:#d6eeff;
+  --font-family: "Bricolage Grotesque", Helvetica, sans-serif;
+}
+
+body {
+  background: var(--background);
+  margin: auto;
+}
+
+h1, h2, h3, p, a {
+  color: #2b2b2b;
+  font-family: var(--font-family);
+}
+
+li {
+  list-style-type: none;
+}
