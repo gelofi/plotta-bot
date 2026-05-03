@@ -3,6 +3,7 @@ import './navigation.css'; // CSS file
 
 // menu icon themes
 const lightMenu = "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciICB2aWV3Qm94PSIwIDAgNTAgNTAiIHdpZHRoPSI1MHB4IiBoZWlnaHQ9IjUwcHgiPjxwYXRoIGQ9Ik0gMCA3LjUgTCAwIDEyLjUgTCA1MCAxMi41IEwgNTAgNy41IFogTSAwIDIyLjUgTCAwIDI3LjUgTCA1MCAyNy41IEwgNTAgMjIuNSBaIE0gMCAzNy41IEwgMCA0Mi41IEwgNTAgNDIuNSBMIDUwIDM3LjUgWiIvPjwvc3ZnPg==";
+const invite = 'https://discord.com/oauth2/authorize?client_id=1497873742502690867&permissions=5066826606570560&integration_type=0&scope=bot';
 
 function Nav() {
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
@@ -36,6 +37,7 @@ function Nav() {
       <>
         <li><button><a href="#features">Features</a></button></li>
         <li><button><a href="#about">About</a></button></li>
+        <li><button><a href={invite} target="_blank" rel="noopener noreferrer">Invite</a></button></li>
       </>
     )
   }
