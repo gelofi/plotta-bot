@@ -47,7 +47,7 @@ function Nav() {
       <nav className='navigation-bar'>
         <div className='plotta'>
           <img
-            src='src\assets\plotta.png'
+            src='../../assets/plotta.png'
             alt='Plotta'
           />
           <h1>Plotta</h1>
