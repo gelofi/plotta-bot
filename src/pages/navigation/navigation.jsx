@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 import './navigation.css'; // CSS file
+import plotta from '../../assets/plotta.png';
 
 // menu icon themes
 const lightMenu = "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciICB2aWV3Qm94PSIwIDAgNTAgNTAiIHdpZHRoPSI1MHB4IiBoZWlnaHQ9IjUwcHgiPjxwYXRoIGQ9Ik0gMCA3LjUgTCAwIDEyLjUgTCA1MCAxMi41IEwgNTAgNy41IFogTSAwIDIyLjUgTCAwIDI3LjUgTCA1MCAyNy41IEwgNTAgMjIuNSBaIE0gMCAzNy41IEwgMCA0Mi41IEwgNTAgNDIuNSBMIDUwIDM3LjUgWiIvPjwvc3ZnPg==";
@@ -47,7 +48,7 @@ function Nav() {
       <nav className='navigation-bar'>
         <div className='plotta'>
           <img
-            src='../../assets/plotta.png'
+            src={plotta}
             alt='Plotta'
           />
           <h1>Plotta</h1>
